@@ -7,8 +7,8 @@ class PagesController < ApplicationController
   end
 
   def stringify
-    @text = "You are nothing!"
-  end
+    @text = "You are nothing!"  
+  end  
 
   def age
   end      
@@ -16,6 +16,6 @@ class PagesController < ApplicationController
   def person
     name = params[:name]
     age = params[:age]
-    @person1 = Person.new(name,age)
+    @person = Person.new(name,age)
   end
 end   
